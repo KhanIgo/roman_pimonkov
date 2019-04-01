@@ -1,22 +1,293 @@
-body{
-    font-family: Circe;
-    font-size: 16px;
-    color: $c-pink-3;
+
+/*Главная страница*/
+
+.hero {
+  color: #000000;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 100;
+  }
 }
-.body-landing{
-    background: $c-pink-1 url('../img/body-bg.jpg') no-repeat;
-    background-position: 0 0;
-    @media (max-width: 1900px) {
-        $bgp:  calc( 585px - 50vw - 315px );
-        background-position: $bgp top;
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+.primary-header a, .primary-footer a {
+  color: #fff;
+}
+
+.primary-header a:hover, .primary-footer a:hover {
+  color: #CCFFFF;
+}
+
+/*Полосы*/
+
+.row {
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+  min-width: 960px;
+}
+
+.row-alt {
+  min-width: 960px;
+}
+
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+
+.row-alt {
+  background: #94D9FF;
+  background: -webkit-linear-gradient(to right, #CEDCEA, #7ADAFF);
+  background: -moz-linear-gradient(to right, #CEDCEA, #7ADAFF);
+  background: linear-gradient(to right, #CEDCEA, #7ADAFF);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Вступление
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+  p {
+    text-align: left;
+    font-size: 21px;
+    line-height: 33px;
+  }
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/*
+  ========================================
+  Спикеры
+  ========================================
+*/
+
+.speaker-info {
+  border: 1px solid #2915A7;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 22px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  background: #0091D0;
+  border: 1px solid #4F26AE;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
+
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.razmer_foto img {
+  background: #0091D0;
+  border: 1px solid #4F26AE;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+  width: 100%;
+}
+
+.speaker-info img {
+  transition: all 0.1s;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+/*
+  ========================================
+  Место проведения
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+
+.venue-hotel {
+  margin-bottom: 22px;
+}
+
+/*Карта*/
+
+.venue-map {
+  width: 620px;
+  height: 230px;
+}
+
+/*Музыка*/
+
+.audio {
+  margin: 0 0 0 480px;
+  align: center;
+}
+
+/*
+  ========================================
+  Регистрация
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+
+form {
+  margin-bottom: 22px;
+}
+
+input, select, textarea {
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.register-group {
+  label {
+    color: #648880;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  input, select, textarea {
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 27px 0;
+    padding: 5px 8px;
+  }
+  input, textarea {
+    width: 100%;
+  }
+  select {
+    height: 34px;
+    width: 60px;
+  }
+  textarea {
+    height: 78px;
+  }
+}
+
+/*Кнопка для раздела регистрация*/
+
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+  &:hover {
+    background: #77a198;
+  }
+}
+
+/*
+  ========================================
+  Расписание
+  ========================================
+*/
+
+table {
+  margin-bottom: 44px;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+th, td {
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+
+td {
+  width: 40%;
+}
+
+thead {
+  line-height: 44px;
+  th {
+    color: #648880;
+    font-size: 24px;
+  }
+}
+
+tbody {
+  th {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 22px;
+    text-transform: uppercase;
+  }
+  td {
+    border-top: 1px solid #dfe2e5;
+    padding-top: 21px;
+    &:first-of-type {
+      padding-right: 15px;
     }
-    
+    &:last-of-type {
+      padding-left: 15px;
+    }
+    &:only-of-type {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
+table {
+  a {
+    color: #888;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+}
 
-
-.s{
-    &__container{}
-    &__title{}
-    
+.schedule-offset {
+  color: #a9b2b9;
 }
