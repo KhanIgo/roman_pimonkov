@@ -1,0 +1,535 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*Пользовательские цели*/
+
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Сетка*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:before, &:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.conteiner, .grid {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.conteiner {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grid, .col-1-3, .col-2-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-1-3, .col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-1-3 {
+  width: 33.33%;
+  margin: 0;
+}
+
+.col-2-3 {
+  width: 66.66%;
+}
+
+/*ClearFix*/
+
+.group {
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  clear: both;
+  *zoom: 1;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+/*Типографика*/
+
+h1, h2, h3, h4 {
+  color: #000000;
+}
+
+h1, h3, h4, p {
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite, em {
+  font-style: italic;
+}
+
+/*Ссылки*/
+
+a {
+  color: #648880;
+  text-decoration: none;
+  &:hover {
+    color: #000000;
+  }
+}
+
+p a {
+  border-bottom: 1px solid #CAE5FF;
+}
+
+/*Кнопки*/
+
+.btn {
+  border-radius: 5px;
+  color: #BCDEFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.btn-alt {
+  border: 1px solid #0B4A89;
+  padding: 10px 30px;
+  transition: all 0.5s;
+  &:hover {
+    background: #78D0FF;
+    color: #648880;
+    transform: scale(1.05);
+  }
+}
+
+/*Основной заголовок*/
+
+.logo {
+  border-top: 4px solid #000000;
+  float: left;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/*Основной подвал*/
+
+.primary-footer {
+  /*color: #648880;*/
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+  small {
+    float: left;
+    font-weight: 400;
+  }
+}
+
+/*Навигация*/
+
+.nav {
+  text-align: right;
+}
+
+/*Главная страница*/
+
+.hero {
+  color: #000000;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+.primary-header a, .primary-footer a {
+  color: #fff;
+}
+
+.primary-header a:hover, .primary-footer a:hover {
+  color: #CCFFFF;
+}
+
+/*Полосы*/
+
+.row {
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+  min-width: 960px;
+}
+
+.row-alt {
+  min-width: 960px;
+}
+
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+
+.row-alt {
+  background: #94D9FF;
+  background: -webkit-linear-gradient(to right, #CEDCEA, #7ADAFF);
+  background: -moz-linear-gradient(to right, #CEDCEA, #7ADAFF);
+  background: linear-gradient(to right, #CEDCEA, #7ADAFF);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Вступление
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+  p {
+    text-align: left;
+    font-size: 21px;
+    line-height: 33px;
+  }
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/*
+  ========================================
+  Спикеры
+  ========================================
+*/
+
+.speaker-info {
+  border: 1px solid #2915A7;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 22px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  background: #0091D0;
+  border: 1px solid #4F26AE;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
+
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.razmer_foto img {
+  background: #0091D0;
+  border: 1px solid #4F26AE;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+  width: 100%;
+}
+
+.speaker-info img {
+  transition: all 0.1s;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+/*
+  ========================================
+  Место проведения
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+
+.venue-hotel {
+  margin-bottom: 22px;
+}
+
+/*Карта*/
+
+.venue-map {
+  width: 620px;
+  height: 230px;
+}
+
+/*Музыка*/
+
+.audio {
+  margin: 0 0 0 480px;
+  align: center;
+}
+
+/*
+  ========================================
+  Регистрация
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+
+form {
+  margin-bottom: 22px;
+}
+
+input, select, textarea {
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.register-group {
+  label {
+    color: #648880;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  input, select, textarea {
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 27px 0;
+    padding: 5px 8px;
+  }
+  input, textarea {
+    width: 100%;
+  }
+  select {
+    height: 34px;
+    width: 60px;
+  }
+  textarea {
+    height: 78px;
+  }
+}
+
+/*Кнопка для раздела регистрация*/
+
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+  &:hover {
+    background: #77a198;
+  }
+}
+
+/*
+  ========================================
+  Расписание
+  ========================================
+*/
+
+table {
+  margin-bottom: 44px;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+th, td {
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+
+td {
+  width: 40%;
+}
+
+thead {
+  line-height: 44px;
+  th {
+    color: #648880;
+    font-size: 24px;
+  }
+}
+
+tbody {
+  th {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 22px;
+    text-transform: uppercase;
+  }
+  td {
+    border-top: 1px solid #dfe2e5;
+    padding-top: 21px;
+    &:first-of-type {
+      padding-right: 15px;
+    }
+    &:last-of-type {
+      padding-left: 15px;
+    }
+    &:only-of-type {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+table {
+  a {
+    color: #888;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+.schedule-offset {
+  color: #a9b2b9;
+}
