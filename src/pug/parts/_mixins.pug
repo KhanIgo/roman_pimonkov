@@ -3,6 +3,10 @@ include _bemto.pug
 
 mixin header(message)
     header.header.row.header__row
+        .hamburger-wrpr
+            button(type="button").hamburger.hamburger--spring.js-hamburger
+                span.hamburger-box
+                    span.hamburger-inner
         .container.header__container
             h1.header__logo.logo
                 a(href='index.html') МАСШТАБИРУЕМ #[br]ВАШ БИЗНЕС
