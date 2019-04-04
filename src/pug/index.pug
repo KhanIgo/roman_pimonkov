@@ -5,8 +5,9 @@ html(lang='RU-ru')
         meta(charset='UTF-8')
         title Готовый бизнес
         include parts/_head.pug
-    body
-        include parts/_header.pug
+    body.index-page
+        +header('Вконтакте — Instagram — YouTube')
+        
         
         section.row-alt
             h1.logo
@@ -14,8 +15,8 @@ html(lang='RU-ru')
                     | МАСШТАБИРУЕМ 
                     br
                     |  ВАШ БИЗНЕС
-            section.hero.conteiner
-                .lead.conteiner.razmer_foto
+            section.hero.container
+                .lead.container.razmer_foto
                     h1
                     h2 ШАГ 1: ОФОРМЛЕНИЕ ГРУППЫ
                     br
@@ -118,7 +119,14 @@ html(lang='RU-ru')
                 // видео
                 iframe(width='960', height='600', src='https://www.youtube.com/embed/3HELwksGwSc', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
         
-    
+        
+        
+        
+        
+        
+        
+        
+        
         include parts/_footer.pug
         
         script(src='assets/libs/jquery/jquery-3.2.1.min.js')

@@ -141,3 +141,8 @@ span.spacer{
 .fz_2-9{ font-size: 2.9em; }
 .fz_2-95{ font-size: 2.95em; }
 .fz_3{ font-size: 3em; }
+
+
+.bebas{
+    @include bebas;
+}

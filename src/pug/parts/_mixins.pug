@@ -2,5 +2,10 @@ include _bemto.pug
 //mixin article_item(title, image, src, ago, excerpt)
 
 mixin header(message)
-    header.primary-header.conteiner.group
-        h3.tagline= message
+    header.header.row.header__row
+        .container.header__container
+            h1.header__logo.logo
+                a(href='index.html') МАСШТАБИРУЕМ #[br]ВАШ БИЗНЕС
+            .header__tagline-nav
+                h3.tagline= message
+                include _nav.pug

@@ -1,10 +1,12 @@
 @import '../fonts/vds/font.css';
+@import '../fonts/BebasNeue/font.css';
 @import 'vars';
 @import 'mixins';
 @import 'reset';
 @import 'grid';
 @import 'ui';
 @import 'typography';
+@import 'main';
 @import 'forms';
 @import 'header';
 @import 'content';
@@ -12,4 +14,4 @@
 @import 'footer';
 @import 'page';
 @import 'elements';
-@import 'main';
+@import 'nav';

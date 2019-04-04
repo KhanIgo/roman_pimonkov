@@ -1,0 +1,1095 @@
+@charset "UTF-8";
+@import url(../fonts/vds/font.css);
+@import url(../fonts/BebasNeue/font.css);
+/* line 1, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 9, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 13, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 17, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 21, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 26, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 33, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 39, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 6, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+body {
+  font-size: 16px;
+  width: 100vw;
+  overflow-x: hidden; }
+  /* line 10, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  body > .row {
+    width: 100vw; }
+
+/* line 15, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.row {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 20, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.row-flex {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap; }
+
+/* line 32, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.j-left {
+  justify-content: flex-start; }
+
+/* line 35, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.j-right {
+  justify-content: flex-end; }
+
+/* line 38, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+body > .row, body > .row-flex {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 42, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 50, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.p0 {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 54, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.pl0 {
+  padding-left: 0; }
+
+/* line 57, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.pr0 {
+  padding-right: 0; }
+
+/* line 60, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.screen {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px; }
+  /* line 64, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .screen > .container {
+    height: 100%; }
+
+@media (min-width: 1170px) {
+  /* line 68, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .cont-col-left {
+    width: calc( 50vw - 585px + 370px);
+    padding-left: calc(50vw - 585px); } }
+
+/* line 78, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.gr-col {
+  float: left; }
+
+/* line 81, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-1 {
+  width: 8.3333%; }
+
+/* line 82, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-2 {
+  width: 16.6666%; }
+
+/* line 83, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-3 {
+  width: 25%; }
+
+/* line 84, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-4 {
+  width: 33.3333%; }
+
+/* line 85, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-5 {
+  width: 41.6666%; }
+
+/* line 86, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-6 {
+  width: 50%; }
+
+/* line 87, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-7 {
+  width: 58.3333%; }
+
+/* line 88, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-8 {
+  width: 66.6666%; }
+
+/* line 89, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-9 {
+  width: 75%; }
+
+/* line 90, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-10 {
+  width: 83.3333%; }
+
+/* line 91, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-11 {
+  width: 91.6666%; }
+
+/* line 92, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-12 {
+  width: 100%; }
+
+@media (min-width: 1170px) {
+  /* line 96, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-1 {
+    width: 8.3333%; }
+  /* line 97, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-2 {
+    width: 16.6666%; }
+  /* line 98, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-3 {
+    width: 25%; }
+  /* line 99, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-4 {
+    width: 33.3333%; }
+  /* line 100, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-5 {
+    width: 41.6666%; }
+  /* line 101, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-6 {
+    width: 50%; }
+  /* line 102, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-7 {
+    width: 58.3333%; }
+  /* line 103, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-8 {
+    width: 66.6666%; }
+  /* line 104, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-9 {
+    width: 75%; }
+  /* line 105, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-10 {
+    width: 83.3333%; }
+  /* line 106, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-11 {
+    width: 91.6666%; }
+  /* line 107, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .lg-col-12 {
+    width: 100%; } }
+
+@media (min-width: 960px) and (max-width: 1170px) {
+  /* line 112, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-1 {
+    width: 8.3333%; }
+  /* line 113, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-2 {
+    width: 16.6666%; }
+  /* line 114, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-3 {
+    width: 25%; }
+  /* line 115, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-4 {
+    width: 33.3333%; }
+  /* line 116, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-5 {
+    width: 41.6666%; }
+  /* line 117, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-6 {
+    width: 50%; }
+  /* line 118, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-7 {
+    width: 58.3333%; }
+  /* line 119, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-8 {
+    width: 66.6666%; }
+  /* line 120, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-9 {
+    width: 75%; }
+  /* line 121, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-10 {
+    width: 83.3333%; }
+  /* line 122, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-11 {
+    width: 91.6666%; }
+  /* line 123, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .md-col-12 {
+    width: 100%; } }
+
+@media (min-width: 600px) and (max-width: 960px) {
+  /* line 128, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-1 {
+    width: 8.3333%; }
+  /* line 129, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-2 {
+    width: 16.6666%; }
+  /* line 130, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-3 {
+    width: 25%; }
+  /* line 131, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-4 {
+    width: 33.3333%; }
+  /* line 132, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-5 {
+    width: 41.6666%; }
+  /* line 133, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-6 {
+    width: 50%; }
+  /* line 134, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-7 {
+    width: 58.3333%; }
+  /* line 135, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-8 {
+    width: 66.6666%; }
+  /* line 136, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-9 {
+    width: 75%; }
+  /* line 137, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-10 {
+    width: 83.3333%; }
+  /* line 138, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-11 {
+    width: 91.6666%; }
+  /* line 139, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .sm-col-12 {
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  /* line 144, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-1 {
+    width: 8.3333%; }
+  /* line 145, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-2 {
+    width: 16.6666%; }
+  /* line 146, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-3 {
+    width: 25%; }
+  /* line 147, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-4 {
+    width: 33.3333%; }
+  /* line 148, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-5 {
+    width: 41.6666%; }
+  /* line 149, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-6 {
+    width: 50%; }
+  /* line 150, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-7 {
+    width: 58.3333%; }
+  /* line 151, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-8 {
+    width: 66.6666%; }
+  /* line 152, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-9 {
+    width: 75%; }
+  /* line 153, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-10 {
+    width: 83.3333%; }
+  /* line 154, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-11 {
+    width: 91.6666%; }
+  /* line 155, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .xs-col-12 {
+    width: 100%; } }
+
+/* line 159, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.full-height {
+  height: 100vh; }
+
+/* line 169, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.m-30px {
+  margin: 30px; }
+
+/* line 172, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.mt-30px {
+  margin-top: 30px; }
+
+/* line 175, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.mt-35px {
+  margin-top: 35px; }
+
+/* line 178, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.mb-30px {
+  margin-bottom: 30px; }
+
+/*Сетка*/
+/* line 189, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 193, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* line 200, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.container, .grid {
+  margin: 0 auto;
+  width: 960px; }
+
+/* line 205, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.container {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+/* line 210, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.grid, .col-1-3, .col-2-3 {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/* line 215, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-1-3, .col-2-3 {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 220, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-1-3 {
+  width: 33.33%;
+  margin: 0; }
+
+/* line 225, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.col-2-3 {
+  width: 66.66%; }
+
+/*ClearFix*/
+/* line 231, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+.group {
+  clear: both;
+  *zoom: 1; }
+  /* line 232, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .group:before {
+    content: "";
+    display: table; }
+  /* line 236, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+  .group:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 245, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_grid.scss */
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%; }
+
+/*Кнопки*/
+/* line 5, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_ui.scss */
+.btn {
+  border-radius: 5px;
+  color: #BCDEFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase; }
+
+/* line 16, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_ui.scss */
+.btn-alt {
+  border: 1px solid #0B4A89;
+  padding: 10px 30px;
+  transition: all 0.5s; }
+  /* line 20, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_ui.scss */
+  .btn-alt:hover {
+    background: #78D0FF;
+    color: #648880;
+    transform: scale(1.05); }
+
+/*Типографика*/
+/* line 4, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h1, h2, h3, h4 {
+  color: #000000; }
+
+/* line 8, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h1, h3, h4, p {
+  margin-bottom: 22px; }
+
+/* line 12, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h1 {
+  font-size: 36px;
+  line-height: 44px; }
+
+/* line 17, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h2 {
+  font-size: 24px;
+  line-height: 44px; }
+
+/* line 22, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h3 {
+  font-size: 21px; }
+
+/* line 26, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h4 {
+  font-size: 18px; }
+
+/* line 30, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+h5 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/* line 37, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+strong {
+  font-weight: 400; }
+
+/* line 41, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+cite, em {
+  font-style: italic; }
+
+/*Ссылки*/
+/* line 47, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+a {
+  color: #648880;
+  text-decoration: none; }
+  /* line 50, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+  a:hover {
+    color: #000000; }
+
+/* line 55, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+p a {
+  border-bottom: 1px solid #CAE5FF; }
+
+/* line 59, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+span.spacer {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  background: transparent; }
+
+/* line 68, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.ta-center {
+  text-align: center; }
+
+/* line 73, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.p-margin p {
+  margin: 0.75em 0; }
+  /* line 75, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+  .p-margin p:first-child {
+    margin-top: 0; }
+  /* line 76, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+  .p-margin p:last-child {
+    margin-bottom: 0; }
+
+/* line 80, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.tdn {
+  text-decoration: none; }
+
+/* line 81, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.uppercase {
+  text-transform: uppercase; }
+
+/* line 83, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-100 {
+  font-weight: 100; }
+
+/* line 84, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-200 {
+  font-weight: 200; }
+
+/* line 85, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-400 {
+  font-weight: 400; }
+
+/* line 86, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-500 {
+  font-weight: 500; }
+
+/* line 87, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-600 {
+  font-weight: 600; }
+
+/* line 88, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-700 {
+  font-weight: 700; }
+
+/* line 89, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fw-800 {
+  font-weight: 800; }
+
+/* line 92, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-5 {
+  font-size: 0.5em; }
+
+/* line 93, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-55 {
+  font-size: 0.55em; }
+
+/* line 94, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-6 {
+  font-size: 0.6em; }
+
+/* line 95, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-65 {
+  font-size: 0.65em; }
+
+/* line 96, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-7 {
+  font-size: 0.7em; }
+
+/* line 97, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-75 {
+  font-size: 0.75em; }
+
+/* line 98, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-8 {
+  font-size: 0.80em; }
+
+/* line 99, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-85 {
+  font-size: 0.85em; }
+
+/* line 100, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-9 {
+  font-size: 0.9em; }
+
+/* line 101, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_0-95 {
+  font-size: 0.95em; }
+
+/* line 103, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1 {
+  font-size: 1em; }
+
+/* line 104, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-05 {
+  font-size: 1.05em; }
+
+/* line 105, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-1 {
+  font-size: 1.1em; }
+
+/* line 106, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-15 {
+  font-size: 1.15em; }
+
+/* line 107, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-2 {
+  font-size: 1.2em; }
+
+/* line 108, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-25 {
+  font-size: 1.25em; }
+
+/* line 109, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-3 {
+  font-size: 1.3em; }
+
+/* line 110, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-35 {
+  font-size: 1.35em; }
+
+/* line 111, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-4 {
+  font-size: 1.4em; }
+
+/* line 112, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-45 {
+  font-size: 1.45em; }
+
+/* line 113, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-5 {
+  font-size: 1.5em; }
+
+/* line 114, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-55 {
+  font-size: 1.55em; }
+
+/* line 115, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-6 {
+  font-size: 1.6em; }
+
+/* line 116, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-65 {
+  font-size: 1.65em; }
+
+/* line 117, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-7 {
+  font-size: 1.7em; }
+
+/* line 118, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-75 {
+  font-size: 1.75em; }
+
+/* line 119, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-8 {
+  font-size: 1.80em; }
+
+/* line 120, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-85 {
+  font-size: 1.85em; }
+
+/* line 121, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-9 {
+  font-size: 1.9em; }
+
+/* line 122, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_1-95 {
+  font-size: 1.95em; }
+
+/* line 123, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2 {
+  font-size: 2em; }
+
+/* line 124, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-05 {
+  font-size: 2.05em; }
+
+/* line 125, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-1 {
+  font-size: 2.1em; }
+
+/* line 126, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-15 {
+  font-size: 2.15em; }
+
+/* line 127, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-2 {
+  font-size: 2.2em; }
+
+/* line 128, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-25 {
+  font-size: 2.25em; }
+
+/* line 129, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-3 {
+  font-size: 2.3em; }
+
+/* line 130, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-35 {
+  font-size: 2.35em; }
+
+/* line 131, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-4 {
+  font-size: 2.4em; }
+
+/* line 132, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-45 {
+  font-size: 2.45em; }
+
+/* line 133, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-5 {
+  font-size: 2.5em; }
+
+/* line 134, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-55 {
+  font-size: 2.55em; }
+
+/* line 135, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-6 {
+  font-size: 2.6em; }
+
+/* line 136, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-65 {
+  font-size: 2.65em; }
+
+/* line 137, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-7 {
+  font-size: 2.7em; }
+
+/* line 138, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-75 {
+  font-size: 2.75em; }
+
+/* line 139, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-8 {
+  font-size: 2.8em; }
+
+/* line 140, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-85 {
+  font-size: 2.85em; }
+
+/* line 141, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-9 {
+  font-size: 2.9em; }
+
+/* line 142, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_2-95 {
+  font-size: 2.95em; }
+
+/* line 143, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.fz_3 {
+  font-size: 3em; }
+
+/* line 146, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_typography.scss */
+.bebas {
+  font-family: "Bebas Neue"; }
+
+/*Пользовательские цели*/
+/* line 3, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+body {
+  background: #293f50;
+  color: #888;
+  font-family: "VDS";
+  font-size: 16px;
+  font-weight: 300; }
+
+/*Основной заголовок*/
+/* line 15, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+.logo {
+  border-top: 4px solid #000000;
+  float: left;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase; }
+
+/* line 26, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right; }
+
+/* line 31, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase; }
+
+/*Основной подвал*/
+/* line 40, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+.primary-footer {
+  /*color: #648880;*/
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px; }
+  /* line 45, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+  .primary-footer small {
+    float: left;
+    font-weight: 400; }
+
+/*Навигация*/
+/* line 53, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_main.scss */
+.nav {
+  text-align: right; }
+
+/* line 3, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_header.scss */
+.index-page .primary-header .logo {
+  display: none; }
+
+/*Главная страница*/
+/* line 4, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.hero {
+  color: #000000;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center; }
+  /* line 9, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .hero h2 {
+    font-size: 36px; }
+  /* line 12, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .hero p {
+    font-size: 24px;
+    font-weight: 100; }
+
+/* line 18, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.teaser a:hover h3 {
+  color: #a9b2b9; }
+
+/* line 22, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.primary-header a, .primary-footer a {
+  color: #fff; }
+
+/* line 26, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.primary-header a:hover, .primary-footer a:hover {
+  color: #CCFFFF; }
+
+/*Полосы*/
+/* line 32, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.row {
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+  min-width: 960px; }
+
+/* line 38, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.row-alt {
+  min-width: 960px; }
+
+/* line 42, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0; }
+
+/* line 47, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.row-alt {
+  background: #94D9FF;
+  background: -webkit-linear-gradient(to right, #CEDCEA, #7ADAFF);
+  background: -moz-linear-gradient(to right, #CEDCEA, #7ADAFF);
+  background: linear-gradient(to right, #CEDCEA, #7ADAFF);
+  padding: 44px 0 22px 0; }
+
+/*
+  ========================================
+  Вступление
+  ========================================
+*/
+/* line 61, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.lead {
+  text-align: center; }
+  /* line 63, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .lead p {
+    text-align: left;
+    font-size: 21px;
+    line-height: 33px; }
+
+/* line 70, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top; }
+  /* line 74, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .nav li:last-child {
+    margin-right: 0; }
+
+/*
+  ========================================
+  Спикеры
+  ========================================
+*/
+/* line 85, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.speaker-info {
+  border: 1px solid #2915A7;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 22px 0;
+  text-align: center; }
+
+/* line 93, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+img {
+  display: block;
+  background: #0091D0;
+  border: 1px solid #4F26AE;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px; }
+
+/* line 102, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%;
+  transition: all 0.5s; }
+  /* line 108, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .teaser img:hover {
+    transform: scale(1.05); }
+
+/* line 113, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top; }
+
+/* line 120, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.razmer_foto img {
+  background: #0091D0;
+  border: 1px solid #4F26AE;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+  width: 100%; }
+
+/* line 129, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.speaker-info img {
+  transition: all 0.1s; }
+  /* line 131, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .speaker-info img:hover {
+    transform: scale(1.5); }
+
+/*
+  ========================================
+  Место проведения
+  ========================================
+*/
+/* line 142, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.venue-theatre {
+  margin-bottom: 66px; }
+
+/* line 146, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.venue-hotel {
+  margin-bottom: 22px; }
+
+/*Карта*/
+/* line 152, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.venue-map {
+  width: 620px;
+  height: 230px; }
+
+/*Музыка*/
+/* line 159, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.audio {
+  margin: 0 0 0 480px;
+  align: center; }
+
+/*
+  ========================================
+  Регистрация
+  ========================================
+*/
+/* line 170, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px; }
+
+/* line 175, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+form {
+  margin-bottom: 22px; }
+
+/* line 179, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+input, select, textarea {
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 184, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400; }
+
+/* line 189, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.register-group input, .register-group select, .register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px; }
+
+/* line 197, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.register-group input, .register-group textarea {
+  width: 100%; }
+
+/* line 200, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.register-group select {
+  height: 34px;
+  width: 60px; }
+
+/* line 204, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.register-group textarea {
+  height: 78px; }
+
+/*Кнопка для раздела регистрация*/
+/* line 211, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px; }
+  /* line 216, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  .btn-default:hover {
+    background: #77a198; }
+
+/*
+  ========================================
+  Расписание
+  ========================================
+*/
+/* line 227, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+table {
+  margin-bottom: 44px;
+  width: 100%; }
+  /* line 230, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  table:last-child {
+    margin-bottom: 0; }
+
+/* line 235, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+th, td {
+  padding-bottom: 22px;
+  vertical-align: top; }
+
+/* line 240, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%; }
+
+/* line 246, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+td {
+  width: 40%; }
+
+/* line 250, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+thead {
+  line-height: 44px; }
+  /* line 252, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  thead th {
+    color: #648880;
+    font-size: 24px; }
+
+/* line 259, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+tbody th {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase; }
+
+/* line 266, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+tbody td {
+  border-top: 1px solid #dfe2e5;
+  padding-top: 21px; }
+  /* line 269, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  tbody td:first-of-type {
+    padding-right: 15px; }
+  /* line 272, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  tbody td:last-of-type {
+    padding-left: 15px; }
+  /* line 275, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+  tbody td:only-of-type {
+    padding-left: 0;
+    padding-right: 0; }
+
+/* line 283, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+table a {
+  color: #888; }
+
+/* line 286, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+table h4 {
+  margin-bottom: 0; }
+
+/* line 291, /Users/khanigo/Documents/Документы работа/__smmvk/site/new/src/assets/scss/_page.scss */
+.schedule-offset {
+  color: #a9b2b9; }
+
+/*# sourceMappingURL=style.css.map */
