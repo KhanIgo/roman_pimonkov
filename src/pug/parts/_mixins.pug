@@ -15,8 +15,7 @@ mixin teaser-card(name, link, img_src, img_alt, title, desc)
         +e.name
             h5= name
         +e.A(href=""+link).link
-            +e.IMG(src="images/general/7.jpg", alt=""+img_alt).img
-            //+e.IMG(src=""+img_src, alt=""+img_alt).img
+            +e.IMG(src=""+img_src, alt=""+img_alt).img
         +e.title
             h3!= title
         +e.desc
