@@ -5,3 +5,9 @@
 @mixin bebas{
     font-family: "Bebas Neue";
 }
+
+@mixin bg-gradient{
+    background: -webkit-linear-gradient(to right, #CEDCEA, #7ADAFF);
+    background: -moz-linear-gradient(to right, #CEDCEA, #7ADAFF);
+    background: linear-gradient(to right, #CEDCEA, #7ADAFF);
+}
